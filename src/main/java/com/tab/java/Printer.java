@@ -1,10 +1,10 @@
 package com.tab.java;
 
-public class IntegerPrinter {
+public class Printer<T> {
 
-	 Integer thingToPrint;
+	 T thingToPrint;
 
-	public IntegerPrinter(Integer thingToPrint) {
+	public Printer(T thingToPrint) {
 		this.thingToPrint = thingToPrint;
 		
 	}
