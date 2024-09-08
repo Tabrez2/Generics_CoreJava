@@ -1,6 +1,7 @@
 package com.tab.java;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 public class GenericsExample {
@@ -39,16 +40,19 @@ public class GenericsExample {
 //		Printer<Cat>printer = new Printer<>(new Cat());
 //		printer.print();
 		
-		//main method..............					
-		shout(new Cat(),new Dog());	
+		//main method..............			
+		List<Integer> intList = Arrays.asList(6,4,9,3,3,1);
+		printList(intList);
+		
+		List<Cat> catList = new ArrayList<Cat>();
+		catList.add(new Cat());
+		printList(catList);	
 	}
 	
 	//Generic method
-	
-	public static <T, V>void shout(T thingsToShout,V otherThingsToshout) {
-		
-		System.out.println(thingsToShout+" !!!!!!");
-		System.out.println(otherThingsToshout+" !!!!!!");
+	public static void printList(List<?>myList) {//by WIlDCard <?> we can only read the data
+		//but <T> Type Parameter we can do operation or return the things
+		System.out.println(myList);
 	}
 
 }
