@@ -39,20 +39,16 @@ public class GenericsExample {
 //		Printer<Cat>printer = new Printer<>(new Cat());
 //		printer.print();
 		
-		//main method..............
-		
-			
-		shout(36);
-		shout("Hello Generic Method...");
-		shout(6.021);
-		
+		//main method..............					
+		shout(new Cat(),new Dog());	
 	}
 	
 	//Generic method
 	
-	public static <T>void shout(T thingsToShout) {
+	public static <T, V>void shout(T thingsToShout,V otherThingsToshout) {
 		
 		System.out.println(thingsToShout+" !!!!!!");
+		System.out.println(otherThingsToshout+" !!!!!!");
 	}
 
 }
