@@ -36,29 +36,23 @@ public class GenericsExample {
 //		Cat myCat = cats.get(0);
 //		List<Dog> dogs = new ArrayList<>();
 		
-		Printer<Cat>printer = new Printer<>(new Cat());
-		printer.print();
+//		Printer<Cat>printer = new Printer<>(new Cat());
+//		printer.print();
 		
+		//main method..............
 		
+			
+		shout(36);
+		shout("Hello Generic Method...");
+		shout(6.021);
 		
-		
-
+	}
 	
+	//Generic method
+	
+	public static <T>void shout(T thingsToShout) {
 		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
+		System.out.println(thingsToShout+" !!!!!!");
 	}
 
 }
